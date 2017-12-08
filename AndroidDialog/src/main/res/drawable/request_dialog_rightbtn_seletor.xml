@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--背景选择器-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--默认情况下-->
+    <item
+        android:state_window_focused="false"
+        android:bottom="-2dp"
+        android:right="-2dp">
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="0.5dp"
+                android:color="#BEBEBE"/>
+            <corners android:bottomRightRadius="10dp" />
+        </shape>
+    </item>
+    <!--单击时候-->
+    <item
+        android:state_pressed="true"
+        android:bottom="-2dp"
+        android:right="-2dp">
+        <shape>
+            <solid android:color="@color/material_requert_btn_press_color"/>
+            <stroke
+                android:width="0.5dp"
+                android:color="#BEBEBE"/>
+            <corners android:bottomRightRadius="10dp" />
+        </shape>
+    </item>
+</selector>
